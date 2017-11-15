@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  display:inline-block;
+  width: 20px;
+}
+
+#about-me-header{
+    text-align: center;
+    padding-top: 20px
+    padding: 20px 0px;
+}
+
+#resume {
+  background-color: black;
+}
+
+#contact-info {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: black;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+
+.link {
+  color: grey;
+  border-bottom: solid grey 2px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #f1f1f1;
+  border-bottom: solid #f1f1f1 2px;
+}
+
+.slide-one {
+  background-image: url(photo-1506111583091-becfd4bfa05d.jpg);
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  color: white;
+  height: 75px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+.sub {
+  color: white;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding:0;
+}
+
+.about-me{
+  height: 500px;
+  border: solid white 10px
+}
+
+.about-me > *{
+  float:left;
+  padding-top: 30px;
+  max-width: 1000px
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.about-me-img {
+  height: 350px;
+  width: 350px;
+  padding-left: 25%;
+  min-width: 350px;
+}
+
+.about-me-text {
+  padding-left: 100px;
+}
+
+.slide-two {
+  background-image: url(photo-1424296308064-1eead03d1ad9.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+}
+
+.slide-two-text {
+  color: white;
+  text-align: center;
+  line-height: 600px;
+  font-weight: bolder;
+}
+
+.resume-img {
+  display: block;
+  margin: auto;
+  width: 45%;
+  padding: 50px 0;
+}
