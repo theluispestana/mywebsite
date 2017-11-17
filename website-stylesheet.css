@@ -1,7 +1,9 @@
-body {
+body, html {
+  background-color: black;
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 span {
@@ -10,13 +12,15 @@ span {
 }
 
 #about-me-header{
+    background-color: black;
+    color: white;
     text-align: center;
-    padding-top: 20px
-    padding: 20px 0px;
+    padding-top: 5%;
 }
 
 #resume {
   background-color: black;
+  min-height: 80%;
 }
 
 #contact-info {
@@ -50,7 +54,8 @@ span {
 
 .slide-one {
   background-image: url(photo-1506111583091-becfd4bfa05d.jpg);
-  height: 1000px;
+  width: auto;
+  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,14 +87,18 @@ span {
 }
 
 .about-me{
-  height: 500px;
-  border: solid white 10px
+  background-color: black;
+  color: white;
+  min-height: 40%;
+  /*border: solid white 10px*/
 }
 
 .about-me > *{
+  background-color: black;
+  color: white;
   float:left;
   padding-top: 30px;
-  max-width: 1000px
+  /*max-width: 1000px*/
 }
 
 .clearfix:before,
@@ -99,10 +108,9 @@ span {
 }
 
 .about-me-img {
-  height: 350px;
-  width: 350px;
+  height: 200px;
+  width: 200px;
   padding-left: 25%;
-  min-width: 350px;
 }
 
 .about-me-text {
@@ -115,20 +123,70 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 1000px;
   text-align: center;
 }
 
 .slide-two-text {
   color: white;
   text-align: center;
-  line-height: 600px;
+  line-height: 1000px;
   font-weight: bolder;
 }
 
 .resume-img {
   display: block;
   margin: auto;
-  width: 45%;
-  padding: 50px 0;
+  width: 40%;
+  padding: 10% 0;
+}
+
+@media only screen and (orientation: portrait){
+  #resume {
+    background-color: black;
+    min-height: 100%;
+  }
+
+  .resume-img {
+    display: block;
+    margin: auto;
+    width: 85%;
+    padding: 45% 0;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  #about-me-header{
+    padding-top: 30%
+  }
+
+  .about-me{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 70%;
+    width: 100%
+  }
+
+  .about-me > *{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+  }
+
+  .about-me-img {
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 48%;
+  }
+
+  .about-me-text{
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 21%;
+  }
 }
